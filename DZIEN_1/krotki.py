@@ -39,3 +39,23 @@ mojalista[pp] = "Toruń"
 mojalista.insert(0,20)
 mojakrotka = tuple(mojalista)
 print(mojakrotka)
+
+
+samochod = ('audi Q7',3.8,2017,98000)
+print(samochod)
+mr = samochod[0]
+print(mr)
+
+print("___________________________")
+
+(marka,poj,rok,cena) = samochod
+print(marka)
+print(poj)
+print(cena)
+print(rok)
+
+opcje = 23,4,243,54.545
+
+a,b,c,d = opcje
+print(c)
+print(type(opcje))
