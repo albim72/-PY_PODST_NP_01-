@@ -95,5 +95,19 @@ print(id(litery_p))
 print(id(litery_q))
 print(id(litery_z))
 
+kolory = ["zielony","czerwony","niebieski","biały","czarny","złoty"]
 
+parzysta = kolory[::2]
+nieparzysta = kolory[1::2]
+spec= kolory[0:5:3]
 
+print(parzysta)
+print(nieparzysta)
+print(spec)
+
+info = "tekst pisany normalnie"
+print(info)
+wspak = info[::-1]
+print(wspak)
+
+ 
