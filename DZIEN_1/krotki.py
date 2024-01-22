@@ -31,3 +31,11 @@ print(animal)
 
 mojakrotka = tuple(("obiekt 56",False,453,78.455,"Kraków"))
 
+print(mojakrotka)
+mojalista = list(mojakrotka)
+mojalista.remove(453)
+pp = mojalista.index("Kraków")
+mojalista[pp] = "Toruń"
+mojalista.insert(0,20)
+mojakrotka = tuple(mojalista)
+print(mojakrotka)
