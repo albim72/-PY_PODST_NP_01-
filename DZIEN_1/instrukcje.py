@@ -18,3 +18,29 @@ match a:
         print("a reprezentuje wartość 10")
     case _:
         print("a jest inne niż 1 lub 10")
+
+#rodzaje pętli
+
+i=1
+while i<6:
+    print(i)
+    if i==3:
+        break
+    i+=1
+else:
+    print("i nigdy nie osiągnie wartości 6")
+
+owoce = ["jabłko","gruszka","banan","kiwi","czereśnia"]
+
+print("________________________________")
+for owoc in owoce:
+    print(owoc)
+
+print("________________________________")
+
+cechy = ["kolorowy","elegancki","brudy","kosztowny","niechlujny"]
+obiekty = ["budynek","płaszcz","ogród","samochód","przystanek"]
+
+for x in cechy:
+    for y in obiekty:
+        print(x,y)
