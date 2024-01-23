@@ -38,16 +38,16 @@ class Osoba:
             return 'otyłość stopnia II'
         else:
             return 'otyłość stopnia III'
-        
-       
+
+
     def policz_ppm(self,plec):
         if plec == "K":
             return 655.1 + 9.563*self.waga + 1.85*self.wzrost - 4.676*self.wiek
         elif plec == "M":
-            return 66.5 + 13.75 * self.waga + 5.003 * self.wzrost - 6.775 * self.wieku  
+            return 66.5 + 13.75 * self.waga + 5.003 * self.wzrost - 6.775 * self.wiek
         else:
             return "nie ma takiej płci"
-            
+
 
 print("*"*50)
 p1 = Osoba("Jan",34,78,175)
@@ -57,6 +57,7 @@ nlat = 3
 print(f"wiek za {nlat} lata/a -> {p1.wiek_za_n_lat(nlat)} lata/a")
 print(f"czy osoba jest pracownikiem? ({p1.czypracownik()})")
 print(f"bmi ciała wynosi: {p1.bmi():.2f}, opis: {p1.opis_bmi()}")
+print(f"zapotrzebowanie energetyczne: {p1.policz_ppm('M'):.2f} kcal")
 
 print("*"*50)
 p2 = Osoba("Olga",29,56,169)
@@ -93,6 +94,7 @@ nlat = 11
 print(f"wiek za {nlat} lata/a -> {o1.wiek_za_n_lat(nlat)} lata/a")
 print(f"czy osoba jest pracownikiem? ({o1.czypracownik()})")
 print(f"bmi ciała wynosi: {o1.bmi():.2f}, opis: {o1.opis_bmi()}")
+print(f"zapotrzebowanie energetyczne: {o1.policz_ppm('K'):.2f} kcal")
 
 
 class Ekstra:
@@ -154,5 +156,6 @@ nlat = 17
 print(f"wiek za {nlat} lata/a -> {s3.wiek_za_n_lat(nlat)} lata/a")
 print(f"czy student jest pracownikiem? ({s3.czypracownik()})")
 print(f"bmi ciała wynosi: {s3.bmi():.2f}, opis: {s3.opis_bmi()}")
+print(f"zapotrzebowanie energetyczne: {s3.policz_ppm('M'):.2f} kcal")
 
 
