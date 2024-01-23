@@ -114,7 +114,14 @@ print(f"wiek za {nlat} lata/a -> {s2.wiek_za_n_lat(nlat)} lata/a")
 print(f"czy student jest pracownikiem? ({s2.czypracownik()})")
 
 #utwórz instancję klasy Student s3, studeny nie jest pracownikiem, ale jest sportowcem, użyj dostepnych metod!
-
-
+print("*"*50)
+s3 = Student("Robert",22,80,179,2343545,"Nauk Społecznych",3,
+             dyscyplina="niegi górskie ultra",lataupr=6,best_wynik="70km, 11h 2min 3s")
+print(s3.print_osoba())
+print(s3.print_student())
+print(s3.infosport())
+nlat = 17
+print(f"wiek za {nlat} lata/a -> {s3.wiek_za_n_lat(nlat)} lata/a")
+print(f"czy student jest pracownikiem? ({s3.czypracownik()})")
 
 
