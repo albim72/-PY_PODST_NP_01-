@@ -37,3 +37,23 @@ slowa = ['jabłko','piarg','koń','nosorożec','olej','rabarbar','złoto','ogrom
 
 krotkie_slowa = [slowo for slowo in slowa if len(slowo)<6]
 print(krotkie_slowa)
+
+#przykład - funkcje złożone
+def podnies_do_kwadratu(x):
+    return x**2
+
+def pomnoz_przez_dwa(y):
+    return y*2
+
+def policz_calosc(x):
+    return pomnoz_przez_dwa(podnies_do_kwadratu(x))
+
+wynik = policz_calosc(4)
+print(wynik)
+
+def policz_calosc_rev(x):
+    return podnies_do_kwadratu(pomnoz_przez_dwa(x))
+
+
+wynik = policz_calosc_rev(4)
+print(wynik)
