@@ -65,5 +65,18 @@ print(f"wiek za {nlat} lata/a -> {o1.wiek_za_n_lat(nlat)} lata/a")
 print(f"czy osoba jest pracownikiem? ({o1.czypracownik()})")
 
 
+class Ekstra:
+    pass
 
+class Sport:
+    def __init__(self,dyscyplina,lataupr,best_wynik):
+        self.dyscyplina = dyscyplina
+        self.lataupr = lataupr
+        self.best_wynik = best_wynik
+        
+    def infosport(self):
+        return f"dysycyplina: {self.dyscyplina}, czas uprawiania [lata]: {self.lataupr}, życiówka: {self.best_wynik}"
+        
+        
+        
 
