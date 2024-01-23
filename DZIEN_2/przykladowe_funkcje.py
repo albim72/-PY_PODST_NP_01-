@@ -12,3 +12,6 @@ print(type(p))
 
 print("___________________________________________________")
 #uruchom 20 razy (iteracyjnie) funkcję witaj()
+for i in range(20):
+    print("uruchomienie nr",i+1)
+    witaj()
