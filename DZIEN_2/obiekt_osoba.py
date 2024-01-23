@@ -76,7 +76,7 @@ class Sport:
 
     def infosport(self):
         return f"dysycyplina: {self.dyscyplina}, czas uprawiania [lata]: {self.lataupr}, życiówka: {self.best_wynik}"
-    
+
 class Student(Pracownik,Sport,Ekstra):
 
     def __init__(self, imie, wiek, waga, wzrost, nr_studenta,wydzial,rok_stud,
@@ -86,16 +86,35 @@ class Student(Pracownik,Sport,Ekstra):
         self.nr_studenta = nr_studenta
         self.wydzial = wydzial
         self.rok_stud = rok_stud
-        
+
     def print_student(self):
         return f"student nr {self.nr_studenta}, wydział: {self.wydzial}, rok studiów: {self.rok_stud}"
 
     def czypracownik(self):
         return self.firma != ""
-    
-    
-    
-    
-        
-        
-        
+
+
+print("*"*50)
+s1 = Student("Olaf",22,77,174,454534,"Budowlany",3)
+print(s1.print_osoba())
+print(s1.print_student())
+nlat = 6
+print(f"wiek za {nlat} lata/a -> {s1.wiek_za_n_lat(nlat)} lata/a")
+print(f"czy student jest pracownikiem? ({s1.czypracownik()})")
+
+
+print("*"*50)
+s2 = Student("Anna",23,60,171,978778,"Automatyki i Informatyki",4,
+             "XYZ","sekretarka",1,3300)
+print(s2.print_osoba())
+print(s2.print_student())
+print(s2.print_pracownik())
+nlat = 4
+print(f"wiek za {nlat} lata/a -> {s2.wiek_za_n_lat(nlat)} lata/a")
+print(f"czy student jest pracownikiem? ({s2.czypracownik()})")
+
+#utwórz instancję klasy Student s3, studeny nie jest pracownikiem, ale jest sportowcem, użyj dostepnych metod!
+
+
+
+
