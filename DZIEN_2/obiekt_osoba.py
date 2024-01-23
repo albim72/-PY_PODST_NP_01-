@@ -38,3 +38,32 @@ nlat = 8
 print(f"wiek za {nlat} lata/a -> {p2.wiek_za_n_lat(nlat)} lata/a")
 print(f"czy osoba jest pracownikiem? ({p2.czypracownik()})")
 
+class Pracownik(Osoba):
+
+    def __init__(self, imie, wiek, waga, wzrost,firma,stanowisko,latapracy,wynagrodzenie):
+        super().__init__(imie, wiek, waga, wzrost)
+        self.firma = firma
+        self.stanowisko = stanowisko
+        self.latapracy = latapracy
+        self.wynagrodzenie = wynagrodzenie
+
+    def print_pracownik(self):
+        return (f"dane pracownika -> firma: {self.firma}, stanowisko pracy: {self.stanowisko}, "
+                f"lata pracy: {self.latapracy}, wynagrodzenie: {self.wynagrodzenie} zł")
+
+    def czypracownik(self):
+        return True
+
+print("*"*50)
+o1 = Pracownik("Aneta",45,72,170,"ABC","Dyrektor",12,12300)
+o1.kolor_oczu = "zielone"
+print(f"kolor oczu: {o1.kolor_oczu}")
+print(o1.print_osoba())
+print(o1.print_pracownik())
+nlat = 11
+print(f"wiek za {nlat} lata/a -> {o1.wiek_za_n_lat(nlat)} lata/a")
+print(f"czy osoba jest pracownikiem? ({o1.czypracownik()})")
+
+
+
+
