@@ -57,4 +57,25 @@ def zamki(id,*zamek):
 zamki(23,"Malbork","Ogrodzieniec","Janowiec")
 zamki(78,"Czersk","Malbork","Kazimierz Dolny","Ogrodzieniec","Janowiec","Będzin")
 
+#przykład 6
+def czy_parzysta(liczba):
+    if liczba%2==0:
+        return True
+    else:
+        return False
 
+lt = 11
+if czy_parzysta(lt):
+    print("lt jest liczbą parzystą!")
+else:
+    print("lt jest liczbą nieparzystą!")
+
+def druga_parzysta(liczba):
+    return liczba%2==0
+
+
+dt = 24
+if druga_parzysta(dt):
+    print("lt jest liczbą parzystą!")
+else:
+    print("lt jest liczbą nieparzystą!")
