@@ -49,3 +49,12 @@ miasta("Tarnów")
 miasta("Zamość",miasto3="Gdańsk")
 miasta(miasto2="Puławy",miasto1="Wrocław",miasto3="Koszalin")
 
+#przykład 5
+def zamki(id,*zamek):
+    print("id konkursu: " + str(id))
+    print("zamek tygodnia -> 1: " + zamek[0] + ", 2: " + zamek[1] + ". 3: " + zamek[2])
+
+zamki(23,"Malbork","Ogrodzieniec","Janowiec")
+zamki(78,"Czersk","Malbork","Kazimierz Dolny","Ogrodzieniec","Janowiec","Będzin")
+
+
