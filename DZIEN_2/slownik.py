@@ -50,3 +50,35 @@ print("________ elementy  słownika  __________")
 
 for x,y in pojazd.items():
     print(x," : ",y)
+
+autokomis = {
+    "auto1":{
+                "marka":"Ford",
+                "model":"Mustang",
+                "rok":1965,
+                "kolor":["czerwony","burgund"]
+    },
+    "auto2":{
+                "marka":"Jeep",
+                "model":"Cherokee",
+                "rok":2018,
+                "kolor":["czarny","biały","zielony"]
+    },
+    "auto3":{
+                "marka":"Fiat",
+                "model":"Freemont",
+                "rok":2016,
+                "kolor":["biały","srebrny"]
+    }
+}
+
+print(autokomis)
+print(autokomis["auto1"])
+print(autokomis["auto1"]["marka"])
+i=1
+for a in autokomis.values():
+    print("_______________________________")
+    print("auto nr",i)
+    for x,y in a.items():
+        print(x," - ",y)
+    i+=1
