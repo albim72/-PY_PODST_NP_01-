@@ -48,7 +48,18 @@ print('zmiana oprawy na: ' + bk.get_oprawa())
 bk.set_wydawnictwo("ABC")
 print("wydawnicto " + bk.get_wydawnictwo())
 
+#stwórz drugi obiekt klasy Book
 
+print("____________________________________________________")
 
+bk2 = Book(67,"Hobbit","J.R.R. Tolkien",39.8)
+print(bk2)
+print("Rabat: " + str(bk2.rabat(16)) + " zł")
+print("Kwota do zapłaty: " +str(bk2.cena - bk2.rabat(16)) + " zł")
+bk2.set_oprawa("tekturowa")
+
+print('zmiana oprawy na: ' + bk2.get_oprawa())
+bk2.set_wydawnictwo("Romcio")
+print("wydawnicto " + bk2.get_wydawnictwo())
 
 
