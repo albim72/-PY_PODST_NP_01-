@@ -24,3 +24,16 @@ print(ujem)
 
 cube = list(map(lambda x:x**3,liczby))
 print(cube)
+
+#list comprehension
+
+kwadraty = [x**2 for x in range(25)]
+print(kwadraty)
+
+lparz = [x for x in liczby if x%2==0]
+print(lparz)
+
+slowa = ['jabłko','piarg','koń','nosorożec','olej','rabarbar','złoto','ogromny']
+
+krotkie_slowa = [slowo for slowo in slowa if len(slowo)<6]
+print(krotkie_slowa)
