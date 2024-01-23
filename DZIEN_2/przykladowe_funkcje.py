@@ -39,3 +39,13 @@ print(obliczenie(5.74,2,0))
 print(obliczenie(-0.0005434,True,700))
 # print(obliczenie('fsdf',True,700))
 
+#przykład 4
+def miasta(miasto1,miasto2="Radom",miasto3="Poznań"):
+    print('konkurs na miasto tygodnia -> 1: ' + miasto1 + ", 2: " + miasto2 + ", 3: " + miasto3)
+
+miasta("Tarnów","Bydogoszcz","Szczecin")
+miasta("Tarnów","Bydogoszcz")
+miasta("Tarnów")
+miasta("Zamość",miasto3="Gdańsk")
+miasta(miasto2="Puławy",miasto1="Wrocław",miasto3="Koszalin")
+
