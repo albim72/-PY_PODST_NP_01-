@@ -73,10 +73,29 @@ class Sport:
         self.dyscyplina = dyscyplina
         self.lataupr = lataupr
         self.best_wynik = best_wynik
-        
+
     def infosport(self):
         return f"dysycyplina: {self.dyscyplina}, czas uprawiania [lata]: {self.lataupr}, życiówka: {self.best_wynik}"
-        
-        
-        
+    
+class Student(Pracownik,Sport,Ekstra):
 
+    def __init__(self, imie, wiek, waga, wzrost, nr_studenta,wydzial,rok_stud,
+                 firma="", stanowisko="", latapracy="", wynagrodzenie="",dyscyplina="",lataupr="",best_wynik=""):
+        Pracownik.__init__(self,imie, wiek, waga, wzrost, firma, stanowisko, latapracy, wynagrodzenie)
+        Sport.__init__(self,dyscyplina,lataupr,best_wynik)
+        self.nr_studenta = nr_studenta
+        self.wydzial = wydzial
+        self.rok_stud = rok_stud
+        
+    def print_student(self):
+        return f"student nr {self.nr_studenta}, wydział: {self.wydzial}, rok studiów: {self.rok_stud}"
+
+    def czypracownik(self):
+        return self.firma != ""
+    
+    
+    
+    
+        
+        
+        
