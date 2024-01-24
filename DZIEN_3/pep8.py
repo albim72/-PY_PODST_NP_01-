@@ -1,22 +1,34 @@
-def testowa(a,b):
+g: int
+
+def testowa(a, b):
     global __g
-    info="ab"
+    info = "ab"
     _t = "obliczenie nr 1"
     __g = 56
-    return (a+b)*__g
+    return (a + b) * __g
 
-print(testowa(4,6))
+
+print(testowa(4, 6))
 print(__g)
 
+
 class Test:
-    def __init__(blabla,x):
-        blabla.x=x
+    def __init__(self, x):
+        self.hx = None
+        self.x = x
+
     __h = 10
     _hx = 9
-    def liczmy(blabla):
-        return blabla.__h + blabla.x
+
+    def liczmy(self):
+        return self.__h + self.x
+
+    # @property
+    # def hx(self):
+    #     return self._hx
+
 
 t = Test(56)
 print(t.liczmy())
-print(t._hx)
+print(t.hx)
 # print(Test.__h)
