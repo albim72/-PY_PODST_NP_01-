@@ -22,3 +22,9 @@ plt1 = PaletaKolorow(45,100,"Setka")
 print(f'liczba kolorów w palecie: {plt1.get_liczba_kolorow()}')
 print(plt1.print_paleta())
 
+
+#Stwórz klasę Kolory dziedziczącą klasę PaletaKolorow,
+#zbuduj konstruktor z dziedziczeniem oparty na konstruktorze klasy PaletaKolorow i uzupełnij go
+#o pola: id_koloru, nazwa_koloru
+#dodaj metodę print_kolor i wypisz za jej pomocą dane: id_koloru, nazwa_koloru
+#zbuduj obiekty k1 i k2 opisujące dwa równe kolory - użyj wszstkich dostępnych metod dla tych instancji
