@@ -1,0 +1,38 @@
+from abc import ABC,abstractmethod
+
+class Prototyp(ABC):
+    def __init__(self,x):
+        self.x=x
+
+    #metoda nieabstrakcyjna klasy abstrakcyjnej
+    def msg(self,info):
+        return f'ważna informacja: {info}'
+
+    #metoda abstrakcyjna klasy abstrakcyjnej
+    @abstractmethod
+    def policz(self):
+        pass
+
+    @abstractmethod
+    def policz_x(self):
+        return self.x*7
+
+
+class Regular(Prototyp):
+
+    def __init__(self, x, y):
+        super().__init__(x)
+        self.y=y
+
+    def policz(self):
+        return self.y/10
+
+    def policz_x(self):
+        return super().policz_x() + self.y*2
+
+
+reg = Regular(4,6)
+
+print(f'funkcja policz -> {reg.policz()}')
+print(f'funkcja policz_x -> {reg.policz_x()}')
+print(reg.msg("ABCSFF"))
